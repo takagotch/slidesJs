@@ -1,6 +1,7 @@
 ### slidesJs
 ---
 
+https://slidesjs.com/
 
 ```
 ```
