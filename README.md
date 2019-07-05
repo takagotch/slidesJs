@@ -3,6 +3,8 @@
 
 https://slidesjs.com/
 
+https://github.com/nathansearles/Slides
+
 ```js
 $(function(){
   $("#slides").slidesjs({
