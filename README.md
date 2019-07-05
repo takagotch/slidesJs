@@ -10,6 +10,57 @@ $(function(){
     height: 528
   });
 });
+
+(function() {
+  
+  (function($, window, document) {
+    var Plugin, defaults, pluginName;
+    pluginName = "slidesjs";
+    defaults = {
+      width: 940,
+      height: 528,
+      start: 1,
+      navigation: {
+        active: true,
+        effect: "slide"
+      },
+      pagination: {
+        active: true,
+        effect: "slide"
+      },
+      play: {
+        active: false,
+        effect: "slide",
+        interval: 5000,
+        auto: false,
+        swap: true,
+        pauseOnHover: false,
+        restartDelay: 2500
+      },
+      effect: {},
+      callback: {}
+    };
+    Plugin = (function() {
+      
+      function Plugin(element, options) {
+        this.element = element;
+        this.options = $.extend(true, {}, defaults, options);
+        this._defaults = defaults;
+        this._name = pluginName;
+        this.init();
+      }
+      
+      return Pluign;
+      
+    })();
+    Plugin.prototype.init = function() {
+      var $element, nextButton, pagination, playButton, prevButton, stopButton,
+        _this = this;
+      $element = $(this.element);
+      this.data = $.data(this);
+    }
+  });
+});
 ```
 
 ```
